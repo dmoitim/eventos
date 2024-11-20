@@ -12,13 +12,13 @@ export default function PaginaEventos() {
                     bg-zinc-800 rounded-lg
                     overflow-hidden
                 ">
-                    <div className="relative w-full h-44">
+                    <div className="relative w-full h-52">
                         <Image src={evento.imagem} fill alt={evento.nome} className="object-cover" />
                     </div>
 
-                    <div className="flex-1 flex flex-col items-center p-7 gap-5">
+                    <div className="flex-1 flex flex-col items-center p-7 gap-5 text-center">
                         <span className="text-lg font-black">{evento.nome}</span>
-                        <p className="flex-1 text-sm text-zinc-400 text-center">{evento.descricao}</p>
+                        <p className="flex-1 text-sm text-zinc-400">{evento.descricao}</p>
 
                         <QRCode className="w-44 h-44"
                             value={JSON.stringify({ id: evento.id, senha: evento.senha })} />
