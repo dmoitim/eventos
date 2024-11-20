@@ -27,7 +27,7 @@ export default function PaginaEventos() {
                             <Link className="flex-1 botao vermelho" href={`/evento/admin/${evento.id}/${evento.senha}`}>
                                 Admin
                             </Link>
-                            <Link className="flex-1 botao verde" href={`/evento/convite/${evento.alias}`}>
+                            <Link className="flex-1 botao verde" href={`/convite/${evento.alias}`}>
                                 Convite
                             </Link>
                         </div>
