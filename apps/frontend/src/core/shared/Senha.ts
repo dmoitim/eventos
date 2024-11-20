@@ -1,5 +1,5 @@
 export default class Senha {
-    static criar(tamanho: number = 30): string {
+    static nova(tamanho: number = 30): string {
         const minusculas = "abcdefghijklmnopqrstuvwxyz";
         const maiusculas = minusculas.toUpperCase();
         const numeros = "0123456789";
